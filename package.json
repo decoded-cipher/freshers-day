@@ -1,0 +1,21 @@
+{
+  "name": "node-hbs-templete",
+  "version": "1.0.0",
+  "description": "A Monolithic Architecture based Node.js + HandleBars Project Templete",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Decodecd_Cipher",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "http-errors": "^1.8.0"
+  }
+}
