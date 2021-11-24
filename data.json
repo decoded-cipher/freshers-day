@@ -1,0 +1,20 @@
+[
+    {
+        "rollno": 1,
+        "name": "Indhuchoodan R",
+        "image": "indhu.jpg",
+        "task": "Fashion Parade"
+    },
+    {
+        "rollno": 2,
+        "name": "Nikhil T Das",
+        "image": "nikhil.jpg",
+        "task": "Balloon Peeppi"
+    },
+    {
+        "rollno": 3,
+        "name": "Anuraj T R",
+        "image": "anuraj.jpg",
+        "task": "Cheettu Kottaram"
+    }
+]
