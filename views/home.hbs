@@ -1,9 +1,30 @@
     <section class="container">
         <div class="row">
             {{#each data as |txt|}}
-            <div class="mt-4 col-md-2">
-                <img class="card-img-top" src="/images/{{txt.image}}">
+            <div class="xyz mt-4 col-md-2">
+                <img class="card-img-top" draggable="false" src="/images/001.png">
+                <div class="centered">{{txt.name}}</div>
             </div>
             {{/each}}
         </div>
     </section>
+
+    <style>
+        .xyz {
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+        }
+
+        /*.xyz img {
+            border-radius: 100px;
+        }*/
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
