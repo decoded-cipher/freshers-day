@@ -1,6 +1,5 @@
 var express = require('express');
 var hbs = require('express-handlebars');
-var path = require('path');
 
 var app = express();
 app.set('views', (__dirname, 'views'));
@@ -12,7 +11,7 @@ app.engine('hbs', hbs({
     layoutsDir: __dirname + '/views/layout/'
 }));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
 
 var Router = require('./router');
 app.use('/', Router);

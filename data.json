@@ -2,19 +2,25 @@
     {
         "rollno": 1,
         "name": "Indhuchoodan R",
-        "image": "indhu.jpg",
+        "image": "001.png",
         "task": "Fashion Parade"
     },
     {
         "rollno": 2,
-        "name": "Nikhil T Das",
-        "image": "nikhil.jpg",
+        "name": "Meera Mariam Jacob",
+        "image": "001.png",
         "task": "Balloon Peeppi"
     },
     {
         "rollno": 3,
         "name": "Anuraj T R",
-        "image": "anuraj.jpg",
+        "image": "001.png",
         "task": "Cheettu Kottaram"
+    },
+    {
+        "rollno": 4,
+        "name": "Nikhil T Das",
+        "image": "001.png",
+        "task": "Music with Body Muscles"
     }
 ]

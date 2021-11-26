@@ -1,6 +1,9 @@
-    
-    <section class="container pt-5">
-        <div class="p-5 text-center">
-            <h1>Hello World!</h1>
+    <section class="container">
+        <div class="row">
+            {{#each data as |txt|}}
+            <div class="mt-4 col-md-2">
+                <img class="card-img-top" src="/images/{{txt.image}}">
+            </div>
+            {{/each}}
         </div>
     </section>
