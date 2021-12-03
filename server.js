@@ -17,4 +17,8 @@ var Router = require('./router');
 app.use('/', Router);
 
 module.exports = app;
-app.listen(process.env.PORT | 3000);
+
+var port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log(`Server started at port ${port}`);
+});

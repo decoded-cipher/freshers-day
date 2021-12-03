@@ -3,7 +3,8 @@
             {{#each data as |txt|}}
             <div class="xyz mt-4 col-md-2">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    {{!-- <img class="card-img-top" draggable="false" src="/images/001.png"> --}}
+                    <img class="card-img-top" draggable="false" src="/images/001.png">
+                    <script>console.log(txt.name)</script>
                     {{txt.name}}
                 </button>
 
