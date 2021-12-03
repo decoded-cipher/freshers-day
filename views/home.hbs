@@ -2,29 +2,35 @@
         <div class="row">
             {{#each data as |txt|}}
             <div class="xyz mt-4 col-md-2">
-                <img class="card-img-top" draggable="false" src="/images/001.png">
-                <div class="centered">{{txt.name}}</div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    {{!-- <img class="card-img-top" draggable="false" src="/images/001.png"> --}}
+                    {{txt.name}}
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                {{txt.name}}
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
             {{/each}}
         </div>
+
+
     </section>
-
-    <style>
-        .xyz {
-            position: relative;
-            text-align: center;
-            cursor: pointer;
-            color: white;
-        }
-
-        /*.xyz img {
-            border-radius: 100px;
-        }*/
-
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
