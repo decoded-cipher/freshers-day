@@ -1,0 +1,31 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.userinfo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-img-top {
+    border-radius: 50%;
+}
+
+
+.userinfo {
+    background: none;
+    border: none;
+}
+
+.avatar {
+    height: 300px;
+    width: auto;
+}
