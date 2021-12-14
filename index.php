@@ -27,7 +27,6 @@ include "config.php";
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
 </head>
 
 <body>
@@ -39,7 +38,7 @@ include "config.php";
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Fresher's Day 2021</h5>
-                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body">
@@ -47,7 +46,8 @@ include "config.php";
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-dismiss="modal">Task Completed</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Task Pending</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Task Completed</button>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@ include "config.php";
 
         <div class='row'>
             <?php 
-            $query = "select * from employee";
+            $query = "select * from data where status = 0";
             $result = mysqli_query($con,$query);
 
 
