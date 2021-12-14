@@ -23,10 +23,11 @@ while( $row = mysqli_fetch_array($result) ){
 
     if ($category == 'I') {
 
+        $response .= "<img class='col-md-3 avatar'>";
         $response .= "<img class='col-md-6 avatar' src='./images/$image[0]' style='height: 300px; 'width: auto;'>";
 
-        $response .= "<div class='col-md-6 my-5' style='text-align: center;'>";
-        $response .= "<h1>$name</h1>";
+        $response .= "<div class='col-md-6 py-5' style='text-align: center;'>";
+        $response .= "<h1 class='py-3'>$name</h1>";
         $response .= "<h4 class='pt-4'>Task : $task</h4>";
         $response .= "<p>$description</p>";
         $response .= "</div>";

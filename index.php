@@ -31,7 +31,8 @@ include "config.php";
 
 <body>
 
-    <div class="container">
+    <div class="container my-5">
+
 
         <div class="modal fade" id="empModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -58,11 +59,11 @@ include "config.php";
             <?php 
             $query = "select * from data where status = 0";
             $result = mysqli_query($con,$query);
-
-
+            
+            
             while($row = mysqli_fetch_array($result)){
                 $id = $row['id'];                  
-        
+                
                 echo "<div class='xyz mt-4 col-md-2 col-sm-6'>";
                 echo "<button type='button' data-id='".$id."' class='userinfo' data-bs-toggle='modal' onmousedown='party.confetti(this)' data-bs-target='#exampleModal'>";
                 echo "<img class='card-img-top' draggable='false' src='./images/001.png'>";
@@ -98,6 +99,10 @@ include "config.php";
                     });
                 });
             });
+
+            window.setTimeout(function () {
+                window.location.reload();
+            }, 10000);
         </script>
     </div>
 </body>

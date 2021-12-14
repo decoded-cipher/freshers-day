@@ -19,7 +19,6 @@ body {
     border-radius: 50%;
 }
 
-
 .userinfo {
     background: none;
     border: none;
@@ -28,4 +27,11 @@ body {
 .avatar {
     height: 300px;
     width: auto;
+}
+
+.test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
