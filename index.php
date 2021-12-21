@@ -100,9 +100,9 @@ include "config.php";
                 });
             });
 
-            window.setTimeout(function () {
-                window.location.reload();
-            }, 10000);
+            // window.setTimeout(function () {
+            //     window.location.reload();
+            // }, 10000);
         </script>
     </div>
 </body>
