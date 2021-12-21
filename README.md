@@ -1,6 +1,6 @@
 # freshers-day
 
-![image](https://user-images.githubusercontent.com/44474792/146918920-ad33f355-be18-476b-bc88-e2c14b4dca54.png)
+![image](https://user-images.githubusercontent.com/44474792/146919727-dad82df6-ab71-41aa-a732-ccec6bb27cbf.png)
 
 ![image](https://user-images.githubusercontent.com/44474792/146918836-00a0af6c-09c0-41cb-8242-3107bde9bfc6.png)
 
