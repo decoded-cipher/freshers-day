@@ -1,5 +1,12 @@
 # Fresher's Day
 
+### Introduction
+The very purpose of the Fresher's day party is to welcome new comers in a friendly atmosphere and avoid social evils, to encourage their creative impulses to boost their confidence. It is the day where seniors and juniors finally bond and unite to celebrate being part of the college.
+
+### Why this Project?
+The main attration of any Fresher's Day Celebration is the tasks or challenges that the senior batches put-up for the newbies. Usually, presentation of tasks along with the assigned students is a hard task. So I just made this simple PHP project to manage all that.
+
+- Organizers can load task details. As the project used **MySQL Database**, its more easy to load them via the **phpMyAdmin Dashboard**.
 
 ![image](https://user-images.githubusercontent.com/44474792/146919727-dad82df6-ab71-41aa-a732-ccec6bb27cbf.png)
 
