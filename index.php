@@ -47,8 +47,8 @@ include "config.php";
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Task Pending</button>
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Task Completed</button>
+                        <button id="pending-btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Task Pending</button>
+                        <button id="complete-btn" type="button" class="btn btn-success" data-bs-dismiss="modal">Task Completed</button>
                     </div>
                 </div>
             </div>
@@ -77,10 +77,11 @@ include "config.php";
 
         <script type='text/javascript'>
             $(document).ready(function () {
+                var userid;
 
                 $('.userinfo').click(function () {
 
-                    var userid = $(this).data('id');
+                    userid = $(this).data('id');
 
                     // AJAX request
                     $.ajax({
@@ -95,6 +96,30 @@ include "config.php";
 
                             // Display Modal
                             $('#empModal').modal('show');
+                        }
+                    });
+                });
+                $('#pending-btn').click(function () {
+                    $.ajax({
+                        url: 'pend_task.php',
+                        type: 'post',
+                        data: {
+                            userid: userid
+                        },
+                        success: function () {
+                           location.reload();
+                        }
+                    });
+                });
+                $('#complete-btn').click(function () {
+                    $.ajax({
+                        url: 'complete_task.php',
+                        type: 'post',
+                        data: {
+                            userid: userid
+                        },
+                        success: function () {
+                            location.reload();
                         }
                     });
                 });
