@@ -57,16 +57,21 @@ include "config.php";
 
         <div class='row'>
             <?php 
-            $query = "select * from data where status = 0";
+            $query = "select * from data where status <> 2";
             $result = mysqli_query($con,$query);
             
             
             while($row = mysqli_fetch_array($result)){
                 $id = $row['id'];                  
                 
-                echo "<div class='xyz mt-4 col-md-2 col-sm-6'>";
+                echo "<div id='data-wrapper'class='xyz mt-4 col-md-2 col-sm-6'>";
                 echo "<button type='button' data-id='".$id."' class='userinfo' data-bs-toggle='modal' onmousedown='party.confetti(this)' data-bs-target='#exampleModal'>";
-                echo "<img class='card-img-top' draggable='false' src='./images/001.png'>";
+                if ($row['status'] == 1) {
+                    echo "<img class='card-img-top' draggable='false' src='./images/pending.png'>";
+                    echo "<div class='pending-status-indicator'></div>";
+                } else {
+                    echo "<img class='card-img-top' draggable='false' src='./images/001.png'>";
+                }
                 echo "<h2 class='centered'>$id</h2>";
                 echo "</button>";
                 echo "</div>";
