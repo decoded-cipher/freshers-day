@@ -33,7 +33,6 @@ include "config.php";
 
     <div class="container my-5">
 
-
         <div class="modal fade" id="empModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -67,10 +66,10 @@ include "config.php";
                 echo "<div id='data-wrapper'class='xyz mt-4 col-md-2 col-sm-6'>";
                 echo "<button type='button' data-id='".$id."' class='userinfo' data-bs-toggle='modal' onmousedown='party.confetti(this)' data-bs-target='#exampleModal'>";
                 if ($row['status'] == 1) {
-                    echo "<img class='card-img-top' draggable='false' src='./images/pending.png'>";
+                    echo "<img class='card-img-top' draggable='false' src='./images/thumbnail/pending.png'>";
                     echo "<div class='pending-status-indicator'></div>";
                 } else {
-                    echo "<img class='card-img-top' draggable='false' src='./images/001.png'>";
+                    echo "<img class='card-img-top' draggable='false' src='./images/thumbnail/default.png'>";
                 }
                 echo "<h2 class='centered'>$id</h2>";
                 echo "</button>";
@@ -96,10 +95,7 @@ include "config.php";
                             userid: userid
                         },
                         success: function (response) {
-                            // Add response in Modal body
                             $('.modal-body').html(response);
-
-                            // Display Modal
                             $('#empModal').modal('show');
                         }
                     });
