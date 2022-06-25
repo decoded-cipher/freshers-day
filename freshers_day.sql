@@ -11,6 +11,8 @@ CREATE TABLE `data` (
 
 
 INSERT INTO `data` (`id`, `name`, `image`, `task`, `description`, `category`, `status`) VALUES
-(1, 'Luttappi', '01.jpg', 'Task 001', 'Task Description 001', 'I', 0),
-(2, 'Mayavi', '02.jpg', 'Task 002', 'Task Description 002', 'I', 0),
-(3, 'Dakini, Kuttoosan, Raju & Radha', '03.jpg,04.jpg,05.jpg,06.jpg', 'Task 003', 'Task Description 001', 'G4', 0);
+(1, 'Steve Rogers', '01.png', 'Lorem Ipsum', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'I', 0),
+(2, 'Steve Rogers & Bucky Barnes', '01.png,02.png', 'Lorem Ipsum', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'G2', 0),
+(3, 'Steve Rogers, Bucky Barnes & Sam Wilson', '01.png,02.png,03.png', 'Lorem Ipsum', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'G3', 0),
+(4, 'Steve Rogers, Bucky Barnes, Sam Wilson & Tony Stark', '01.png,02.png,03.png,04.png', 'Lorem Ipsum', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'G4', 0),
+(5, 'Steve Rogers, Bucky Barnes, Sam Wilson, Tony Stark & Wanda Maximoff', '01.png,02.png,03.png,04.png,05.png', 'Lorem Ipsum', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'G5', 0);
